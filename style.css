@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #69e9c7, #e7639c);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.location-Btn {
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 18px;
+}
+
+.Weather-icon {
+    width: 100%;
+    max-width: 170px;
+    margin-top: 30px;
+}
+
+.Weather h1 {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.Weather h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.cool {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.cool img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 1.75rem;
+    margin-top: -6px;
+}
+
+.Weather {
+    display: none;
+}
+
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 0.875rem;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        padding: 30px 20px;
+    }
+    
+    .search input {
+        padding: 8px 20px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .search button,
+    .location-Btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    .Weather h1 {
+        font-size: 3rem;
+    }
+
+    .Weather h2 {
+        font-size: 2rem;
+    }
+
+    .humidity, .wind {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 20px 15px;
+    }
+
+    .search input {
+        padding: 6px 15px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .search button,
+    .location-Btn {
+        width: 45px;
+        height: 45px;
+    }
+
+    .Weather h1 {
+        font-size: 2.5rem;
+    }
+
+    .Weather h2 {
+        font-size: 1.5rem;
+    }
+
+    .humidity, .wind {
+        font-size: 1.25rem;
+    }
+}
